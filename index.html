@@ -7,11 +7,11 @@
   <title>QRgenerador-De-Bienestar-Joven.edu.co</title>
   <meta name="description" content="Generador de códigos QR para Bienestar Joven">
   <meta name="keywords" content="QR, Bienestar Joven, generador QR">
-  <link rel="icon" href="https://i.ibb.co/3h5bjf7/bienestar.png" type="image/png">
+  <link rel="icon" href="https://i.ibb.co/0nBJRxr/Logobien3star.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="generadordeQR.css">
   <link href="https://fonts.googleapis.com/css2?family=Syabil&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">">
 </head>
 <body>
 
@@ -41,7 +41,9 @@
       <!-- Logo de Bienestar Joven -->
       <div class="animate__animated animate__bounce slow-bounce">
         <header>
-          <img class="logo" src="https://i.ibb.co/3h5bjf7/bienestar.png" alt="logo de bienestar-joven">
+            <a href="https://beacons.ai/bienestar.joven" target="_blank" aria-label="Enlace al repositorio de GitHub">
+                <img class="logo" src="https://i.ibb.co/0nBJRxr/Logobien3star.png" alt="logo de bienestar-joven">
+            </a>            
         </header>
       </div>
 
@@ -70,7 +72,7 @@
           DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i>
         </div>
 
-        <!-- Firma -->
+        <!-- my Firma -->
         <footer>
           <h3>@JMP :)</h3>
         </footer>
@@ -79,9 +81,10 @@
       <!-- Cargar scripts al final para mejorar rendimiento -->
       <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js" async></script>
       <script src="generadordeQR.js" async></script>
-
     </div>
   </div>
+
+
 
 </body>
 </html>
@@ -122,34 +125,33 @@
     }
 
   
-body {
 
-    padding-top: 5px; /* Espaciado superior */
-    margin: 0; /* Elimina el margen predeterminado */
-    text-align: center; /* Centra el contenido del cuerpo */
+    body {
+
+    padding-top: 5px;
+    margin: 0;
+    text-align: center;
     display: flex;
-    position: relative; /* Posición relativa para el seudoelemento */
-    flex-direction: column; /* Apila los elementos en columna */
-    align-items: center; /* Centra horizontalmente */
-    padding-bottom: 20px; /* Añade espacio inferior para evitar superposiciones */
-    
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 body::after {
-    content: ""; /* Contenido del seudoelemento */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://i.ibb.co/kQbvg1J/Fondo.jpg"); /* Imagen de fondo y gradiente */
-    background-repeat: no-repeat; /* No repetir la imagen */
-    background-size: cover; /* Cubrir toda el área */
-    background-attachment: fixed; /* Fijar la imagen de fondo */
-    background-position: center; /* Centrar la imagen */
-    width: 100vw; /* Ancho igual al viewport */
-    height: 100vh; /* Alto igual al viewport */
-    top: 0; /* Colocar en la parte superior */
-    left: 0; /* Colocar en la parte izquierda */
-    position: fixed; /* Posición fija para mantener la imagen de fondo */
-    z-index: -1; /* Colocar detrás del contenido principal */
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.ibb.co/2nVKpBF/Bien3star.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Cubre toda el área */
+    background-attachment: fixed;
+    background-position: center; /* Centra la imagen */
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
 }
-
   
   
   
@@ -410,7 +412,7 @@ transform-origin: top right;
   animation-iteration-count: infinite;
   border-radius: 40px;
   padding: 5px;
-  background: url("https://i.ibb.co/3h5bjf7/bienestar.png");
+  background: url("https://i.ibb.co/0nBJRxr/Logobien3star.png");
   background-size: 50px 50px;
   filter: brightness(50%);
   display: inline-block;
@@ -486,12 +488,37 @@ h3 {
 
 
 
+
+
+
+
+
+
+
   
 
   @media screen and (max-width: 768px) {
 
 
 
+    body, body::after {
+      
+        background-attachment: scroll;
+        background-size: cover; /* Use 'contain' if needed */
+        background-position: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+  
     .animation-container {
 
 
@@ -499,12 +526,6 @@ overflow: hidden;
 
 }
 
-
-    body::after {
-
-      background-attachment: scroll; 
-
-  }
 
 
   
@@ -691,8 +712,13 @@ font-size: 16px;
     
     
     
-    
-    
     </script>
-    
+
+
+
+
+
+
+
+
   
